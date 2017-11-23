@@ -36,45 +36,45 @@
   "description": "Modern CSS framework based on Flexbox",
   "devDependencies": {
     "autoprefixer": "^7.1.1",
-    "node-sass": "^4.5.3",
+    "node-scss": "^4.5.3",
     "postcss-cli": "^4.1.0",
     "rimraf": "^2.6.1"
   },
   "files": [
     "css",
-    "sass",
-    "bulma.sass",
+    "scss",
+    "bulma.scss",
     "LICENSE",
     "README.md"
   ],
   "homepage": "http://bulma.io",
   "keywords": [
     "css",
-    "sass",
+    "scss",
     "flexbox",
     "responsive",
     "framework"
   ],
   "license": "MIT",
-  "main": "bulma.sass",
+  "main": "bulma.scss",
   "name": "bulma",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jgthms/bulma.git"
   },
   "scripts": {
-    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix",
+    "build": "npm run build-clean && npm run build-scss && npm run build-autoprefix",
     "build-autoprefix": "postcss --use autoprefixer --map false --output css/bulma.css css/bulma.css",
     "build-clean": "rimraf css",
-    "build-sass": "node-sass --output-style expanded --source-map true bulma.sass css/bulma.css",
+    "build-scss": "node-scss --output-style expanded --source-map true bulma.scss css/bulma.css",
     "deploy": "npm run build && npm run docs",
-    "docs": "npm run docs-sass && npm run docs-autoprefix",
+    "docs": "npm run docs-scss && npm run docs-autoprefix",
     "docs-autoprefix": "postcss --use autoprefixer --map false --output docs/css/bulma-docs.css docs/css/bulma-docs.css",
-    "docs-sass": "node-sass --output-style expanded docs/bulma-docs.sass docs/css/bulma-docs.css",
-    "start": "npm run build-sass -- --watch",
-    "start-docs": "npm run docs-sass -- --watch",
-    "start-test": "npm run test-sass -- --watch",
-    "test-sass": "node-sass --output-style expanded docs/bulma-test.sass docs/css/bulma-test.css"
+    "docs-scss": "node-scss --output-style expanded docs/bulma-docs.scss docs/css/bulma-docs.css",
+    "start": "npm run build-scss -- --watch",
+    "start-docs": "npm run docs-scss -- --watch",
+    "start-test": "npm run test-scss -- --watch",
+    "test-scss": "node-scss --output-style expanded docs/bulma-test.scss docs/css/bulma-test.css"
   },
   "style": "bulma/css/bulma.css",
   "version": "0.6.0"
