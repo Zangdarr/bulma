@@ -1,14 +1,14 @@
 {
-  "name": "bulma",
+  "name": "bulma_scss",
   "version": "0.6.1",
   "homepage": "https://bulma.io",
   "author": "Jeremy Thomas <bbxdesign@gmail.com> (http://jgthms.com)",
   "description": "Modern CSS framework based on Flexbox",
   "main": "bulma.scss",
-  "style": "bulma/css/bulma.css",
+  "style": "bulma_scss/css/bulma.css",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jgthms/bulma.git"
+    "url": "git+https://github.com/Zangdarr/bulma_scss.git"
   },
   "license": "MIT",
   "keywords": [
@@ -19,7 +19,7 @@
     "framework"
   ],
   "bugs": {
-    "url": "https://github.com/jgthms/bulma/issues"
+    "url": "https://github.com/Zangdarr/bulma_scss/issues"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.1",
